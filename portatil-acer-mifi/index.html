@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Programa Educa en Digital</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link href="fonts/Lato/Lato-Regular.ttf?family=Lato" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/vnd.microsoft.icon" href="img/educa.ico">
+
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+$(function(){
+     $('a[href*=#]').click(function() {
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname) {
+             var $target = $(this.hash);
+             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+             if ($target.length) {
+                 var targetOffset = $target.offset().top;
+                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+                 return false;
+            }
+       }
+   });
+});
+</script>
+
+<!-- FontAwesome -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+	<div class="cabecera-corporativa">
+	  <div><a href="https://www.red.es/" target="_blank"><img src="img/logos-ministerios-redes-europa.svg" class="w3-image" alt="Logos: Gobierno de España, Red.es, Unión Europea"></a></div>
+<div>
+  <div class="language"><span style="font-size: medium"><strong>ES</strong> / <a href="index-cat.html" id="idioma">CAT</a></span></div>
+  <img src="img/logo-cat.png" class="w3-image logo-region" alt="Logo del Gobierno de País Vasco"></div>
+	</div>
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">Programa Educa en Digital</a>
+    <a href="#puestoedu" class="w3-bar-item w3-button w3-hide-small">Manual del Puesto Educativo</a>
+    <a href="#test" class="w3-bar-item w3-button w3-hide-small">Test de Velocidad</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#puestoedu" class="w3-bar-item w3-button" onclick="toggleFunction()">Manual del Puesto Educativo</a>
+    <a href="#test" class="w3-bar-item w3-button" onclick="toggleFunction()">Test de Velocidad</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container">
+  <div class="w3-display-middle stl-nowrap">
+    <h1><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Educa en Digital</span></h1>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64">
+	<p>Este equipo forma parte del programa “Educa en Digital” desarrollado por Red.es, entidad pública empresarial adscrita al Ministerio de Asuntos Económicos y Transformación Digital, a través de la Secretaría de Estado de Digitalización e Inteligencia Artificial en colaboración con el Ministerio de Educación y Formación Profesional y las Comunidades Autónomas, y cuenta con la cofinanciación de los Fondos Europeos de Desarrollo Regional (FEDER).</p>
+  <p class="posrel"><span id="home"></span>El programa <strong>“Educa en Digital”</strong> desarrollado por <strong>Red.es</strong>, entidad pública empresarial adscrita al <strong>Ministerio de Asuntos Económicos y Transformación Digital</strong> a través de la <strong>Secretaría de Estado de Digitalización e Inteligencia Artificial</strong>, en colaboración con el <strong>Ministerio de Educación y Formación Profesional</strong> y las <strong>Comunidades Autónomas</strong>, consiste en un conjunto de acciones para apoyar la transformación digital del sistema educativo mediante la dotación de dispositivos, recursos educativos digitales, adecuación de las competencias digitales de los docentes, y acciones que conlleven la aplicación de la Inteligencia Artificial a la educación personalizada.</p>
+  <p>La primera actuación de <strong>Educa en Digital</strong> consiste en la dotación a los centros docentes de puestos educativos que puedan ser prestados al alumnado en situación de vulnerabilidad. Cada puesto educativo consta de un dispositivo tipo ordenador portátil o equivalente con software de base necesario incorporado, junto con elementos de seguridad, configurado para uso educativo; y de una conexión a Internet incluyendo un servicio de filtrado de contenidos por un periodo de seis meses para su uso en el hogar.</p>
+  <p class="posrel"><span id="puestoedu"></span>Para obtener más información sobre el <strong>puesto educativo</strong> <a href="manuales/manual-usuario.pdf" target="_blank" title="Manual del Puesto Educativo" class="enlace">pinche aquí y acceda al MANUAL DE USUARIO</a>.</p>
+  
+	<div class="w3-row">
+		<div class="w3-col m12 w3-padding-large">
+			<p class="w3-center imgmap">
+				<img src="img/portatil-mifi.png" alt="portatil mifi" width="900" height="250" class="w3-round w3-image">
+				<a href="manuales/Manual_del_Portatil.pdf" target="_blank" class="map4" title="Manual del equipo"></a>
+				<a href="manuales/Manual_del_MIFI.pdf" target="_blank" class="map5" title="Guía rápida"></a>
+			</p>
+		</div>
+	</div>
+	<div class="w3-row">
+		<div class="w3-col m6 w3-padding-large">
+			<h2 class="dispositivo">PORTÁTIL</h2>
+			<p>Dispositivo informático que permite el acceso a los contenidos de Educa en Digital.</p>
+		</div>
+		<div class="w3-col m6 w3-padding-large">
+			<h2 class="dispositivo">MIFI</h2>
+			<p>Dispositivo de conectividad a través del cual se proporciona el servicio de conectividad mediante conexión WiFi.</p>
+		</div>
+		
+	</div>
+    
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-white" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-white w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="servicios">
+  <div class="w3-display-middle doble-middle">
+     <h2 class="posrel"><span id="test"></span><span class="w3-xxlarge w3-text-white w3-wide">Test de Velocidad</span></h2>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-sand w3-padding-16">
+  <div class="w3-content w3-container">
+      <div class="w3-col m12 w3-section">
+        <a href="https://orangespain.speedtestcustom.com/" target="_blank"><img class="w3-image max600" src="img/test-velocidad.png" alt="Test de Velocidad"><br>
+		Test de Velocidad</a>
+      </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-gray w3-padding-16">
+	<h2 class="h2pie"><span class="col-white">En caso de incidencia póngase en contacto con su Centro Educativo</span></h2>
+	<p class="w3-center"><span class="col-white">&nbsp;</span></p> 
+	<a href="#home" class="w3-button w3-light-blue"><i class="fa fa-arrow-up w3-margin-right"></i>Subir</a>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
